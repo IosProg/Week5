@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		6674217120A0AC41001705EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6674217020A0AC41001705EC /* AppDelegate.swift */; };
-		6674217320A0AC41001705EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6674217220A0AC41001705EC /* ViewController.swift */; };
 		6674217620A0AC41001705EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6674217420A0AC41001705EC /* Main.storyboard */; };
 		6674217820A0AC43001705EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6674217720A0AC43001705EC /* Assets.xcassets */; };
 		6674217B20A0AC43001705EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6674217920A0AC43001705EC /* LaunchScreen.storyboard */; };
 		6674218620A0AC43001705EC /* Week5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6674218520A0AC43001705EC /* Week5Tests.swift */; };
 		6674219120A0AC43001705EC /* Week5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6674219020A0AC43001705EC /* Week5UITests.swift */; };
+		66F0DF2F20A0B9D800DB0E68 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F0DF2E20A0B9D800DB0E68 /* TripsViewController.swift */; };
+		66F0DF3120A0B9FD00DB0E68 /* TripDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F0DF3020A0B9FD00DB0E68 /* TripDetailsViewController.swift */; };
+		66F0DF3320A0BD5A00DB0E68 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F0DF3220A0BD5900DB0E68 /* Trip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		6674216D20A0AC41001705EC /* Week5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6674217020A0AC41001705EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6674217220A0AC41001705EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6674217520A0AC41001705EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6674217720A0AC43001705EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6674217A20A0AC43001705EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		6674218C20A0AC43001705EC /* Week5UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Week5UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6674219020A0AC43001705EC /* Week5UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week5UITests.swift; sourceTree = "<group>"; };
 		6674219220A0AC43001705EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66F0DF2E20A0B9D800DB0E68 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
+		66F0DF3020A0B9FD00DB0E68 /* TripDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailsViewController.swift; sourceTree = "<group>"; };
+		66F0DF3220A0BD5900DB0E68 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				6674217020A0AC41001705EC /* AppDelegate.swift */,
-				6674217220A0AC41001705EC /* ViewController.swift */,
 				6674217420A0AC41001705EC /* Main.storyboard */,
 				6674217720A0AC43001705EC /* Assets.xcassets */,
 				6674217920A0AC43001705EC /* LaunchScreen.storyboard */,
 				6674217C20A0AC43001705EC /* Info.plist */,
+				66F0DF3220A0BD5900DB0E68 /* Trip.swift */,
+				66F0DF2E20A0B9D800DB0E68 /* TripsViewController.swift */,
+				66F0DF3020A0B9FD00DB0E68 /* TripDetailsViewController.swift */,
 			);
 			path = Week5;
 			sourceTree = "<group>";
@@ -256,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6674217320A0AC41001705EC /* ViewController.swift in Sources */,
+				66F0DF3320A0BD5A00DB0E68 /* Trip.swift in Sources */,
 				6674217120A0AC41001705EC /* AppDelegate.swift in Sources */,
+				66F0DF2F20A0B9D800DB0E68 /* TripsViewController.swift in Sources */,
+				66F0DF3120A0B9FD00DB0E68 /* TripDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
